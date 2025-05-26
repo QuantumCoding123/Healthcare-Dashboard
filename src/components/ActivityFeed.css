@@ -1,0 +1,71 @@
+.activity-feed {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.activity-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.activity-subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0 0 1.5rem 0;
+}
+
+.chart-container {
+  height: 200px;
+}
+
+.chart {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.chart-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.chart-bar {
+  width: 100%;
+  max-width: 24px;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.chart-label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .activity-feed {
+    padding: 1rem;
+  }
+
+  .chart-container {
+    height: 150px;
+  }
+
+  .chart-bar {
+    max-width: 20px;
+  }
+
+  .chart-label {
+    font-size: 0.7rem;
+  }
+}

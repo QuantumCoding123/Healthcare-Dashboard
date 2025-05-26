@@ -1,0 +1,153 @@
+.calendar-view {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-header {
+  margin-bottom: 1.5rem;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.week-label {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.month-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.month-year {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nav-btn {
+  padding: 0.25rem;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background: #f1f5f9;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+}
+
+.day-header {
+  margin-bottom: 0.5rem;
+}
+
+.day-name {
+  display: block;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+.day-number {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.day-appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.appointment-time {
+  font-size: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  background: #4c63d2;
+  color: white;
+  border-radius: 4px;
+}
+
+.appointment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.appointment-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.card-time {
+  font-size: 0.75rem;
+  margin: 0 0 0.25rem 0;
+  opacity: 0.9;
+}
+
+.card-doctor {
+  font-size: 0.75rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .appointment-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}

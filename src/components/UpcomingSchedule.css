@@ -1,0 +1,44 @@
+.upcoming-schedule {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1.5rem 0;
+}
+
+.day-schedule {
+  margin-bottom: 1.5rem;
+}
+
+.day-schedule:last-child {
+  margin-bottom: 0;
+}
+
+.day-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #64748b;
+  margin: 0 0 1rem 0;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .upcoming-schedule {
+    padding: 1rem;
+  }
+
+  .schedule-title {
+    font-size: 1rem;
+  }
+}

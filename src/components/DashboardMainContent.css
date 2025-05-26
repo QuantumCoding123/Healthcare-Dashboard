@@ -1,0 +1,85 @@
+.dashboard-main {
+  flex: 1;
+  padding: 2rem;
+  background: #f8fafc;
+  overflow-y: auto;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  max-width: 1400px;
+}
+
+.anatomy-health-section {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.anatomy-health-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.calendar-section {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.schedule-section {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.activity-section {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .anatomy-health-section,
+  .calendar-section,
+  .schedule-section,
+  .activity-section {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .anatomy-health-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    padding: 1rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-grid {
+    gap: 1rem;
+  }
+}
